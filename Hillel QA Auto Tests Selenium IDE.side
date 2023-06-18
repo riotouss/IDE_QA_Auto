@@ -1,0 +1,372 @@
+{
+  "id": "c2535e37-8c49-43de-a3a4-20eb574f4da7",
+  "version": "2.0",
+  "name": "Hillel QA Auto tests ",
+  "url": "https://qauto.forstudy.space/",
+  "tests": [{
+    "id": "cb05f579-5659-48b9-9685-dd3e70847023",
+    "name": "1. Sign In",
+    "commands": [{
+      "id": "7aadc309-0a45-4476-aadd-a18874c1d0ae",
+      "comment": "",
+      "command": "open",
+      "target": "https://qauto.forstudy.space/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73ffd2c4-207b-464c-a646-6876ff4736a8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x822",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d781bca5-f5f4-40f8-b327-458cf5d28de8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Sign In')]",
+      "targets": [
+        ["css=.btn-outline-white", "css:finder"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d4f333c-20c0-4958-8211-337e450f9a60",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='signinEmail']",
+      "targets": [
+        ["id=signinEmail", "id"],
+        ["name=email", "name"],
+        ["css=#signinEmail", "css:finder"],
+        ["xpath=//input[@id='signinEmail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "crimsonlumos@gmail.com"
+    }, {
+      "id": "77638fd7-e826-4a8a-8d90-72d7db6c64a5",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='signinPassword']",
+      "targets": [
+        ["id=signinPassword", "id"],
+        ["name=password", "name"],
+        ["css=#signinPassword", "css:finder"],
+        ["xpath=//input[@id='signinPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Vfdhjitymrf1992"
+    }, {
+      "id": "da4cafe9-df1f-4761-8b13-d4f6991a0fd1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='remember']",
+      "targets": [
+        ["id=remember", "id"],
+        ["name=remember", "name"],
+        ["css=#remember", "css:finder"],
+        ["xpath=//input[@id='remember']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee5bccf0-d3d3-4ccc-b2d3-d09363c03759",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Login')]",
+      "targets": [
+        ["css=.btn-primary:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "100648dd-28ee-429e-a9d1-76067061b03e",
+    "name": "2. Checking clickability of side buttons: garage, fuel expenses, instructions, profile, settings",
+    "commands": [{
+      "id": "040b4e28-b6ec-4a0d-bdb2-819b08296eff",
+      "comment": "",
+      "command": "open",
+      "target": "https://qauto.forstudy.space/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a5c51e75-3e01-4e5b-8376-efa71021d4aa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x822",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc2d5069-fd6c-426a-94d4-8305fb6c1538",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(@href, '/panel/garage')])[3]",
+      "targets": [
+        ["css=.sidebar > .-active", "css:finder"],
+        ["xpath=(//a[contains(text(),'Garage')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/panel/garage')])[3]", "xpath:href"],
+        ["xpath=//div/div/div/div/nav/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ab3063c-a551-43a7-b807-d0044176e5cb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(@href, '/panel/expenses')])[3]",
+      "targets": [
+        ["css=.sidebar > .btn:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Fuel expenses')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/panel/expenses')])[3]", "xpath:href"],
+        ["xpath=//div/div/div/div/nav/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a7f6699-ad92-4ab1-93d6-4387f0a346fe",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(@href, '/panel/instructions')])[3]",
+      "targets": [
+        ["css=.btn-white:nth-child(3)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Instructions')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/panel/instructions')])[3]", "xpath:href"],
+        ["xpath=//div/div/div/div/nav/a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58a3def4-022d-4966-be17-f71f882f04c6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(@href, '/panel/profile')])[2]",
+      "targets": [
+        ["linkText=Profile", "linkText"],
+        ["css=.-profile", "css:finder"],
+        ["xpath=(//a[contains(text(),'Profile')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/panel/profile')])[2]", "xpath:href"],
+        ["xpath=//div/div/nav/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86482df7-fcfe-42f7-8957-b422aee440fa",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(@href, '/panel/settings')])[2]",
+      "targets": [
+        ["linkText=Settings", "linkText"],
+        ["css=.sidebar_btn-group > .btn:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Settings')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/panel/settings')])[2]", "xpath:href"],
+        ["xpath=//div/div/nav/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bfbabf4-6f9c-4c5a-909c-06c7f91176c3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(@href, '/panel/garage')])[3]",
+      "targets": [
+        ["css=.sidebar > .btn:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Garage')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/panel/garage')])[3]", "xpath:href"],
+        ["xpath=//div/div/div/div/nav/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d39b34d8-3367-4b1a-b1c9-f54b03f1e5be",
+    "name": "3. Add BMW 5 to garage",
+    "commands": [{
+      "id": "dc1bb9ed-ea31-491f-ade5-57555bdc8cc9",
+      "comment": "",
+      "command": "open",
+      "target": "https://qauto.forstudy.space/panel/garage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d593095-c6c3-411b-8a4a-a15229841550",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x822",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d216ef4b-b44e-483b-b685-6adafe934690",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add car')]",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add car')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c40dd2eb-be6c-4a2f-ab95-0e0cb02f0844",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//select[@id='addCarBrand']",
+      "targets": [
+        ["id=addCarBrand", "id"],
+        ["name=carBrandId", "name"],
+        ["css=#addCarBrand", "css:finder"],
+        ["xpath=//select[@id='addCarBrand']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99cf8539-0f78-475f-ade1-bca8a90c9f40",
+      "comment": "",
+      "command": "select",
+      "target": "id=addCarBrand",
+      "targets": [],
+      "value": "label=BMW"
+    }, {
+      "id": "cd40735f-1ab5-48b5-9f1e-74046bac8d81",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//select[@id='addCarModel']",
+      "targets": [
+        ["id=addCarModel", "id"],
+        ["name=carModelId", "name"],
+        ["css=#addCarModel", "css:finder"],
+        ["xpath=//select[@id='addCarModel']", "xpath:attributes"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbda0c8e-a708-4aa8-a104-fff7f752ca13",
+      "comment": "",
+      "command": "select",
+      "target": "id=addCarModel",
+      "targets": [],
+      "value": "label=5"
+    }, {
+      "id": "94cb2d7a-d116-44a3-86aa-e6087641e1a5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='addCarMileage']",
+      "targets": [
+        ["id=addCarMileage", "id"],
+        ["name=mileage", "name"],
+        ["css=#addCarMileage", "css:finder"],
+        ["xpath=//input[@id='addCarMileage']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8311e37-cbbc-4bf5-8164-b5d902290222",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input[@id='addCarMileage']",
+      "targets": [],
+      "value": "5"
+    }, {
+      "id": "d99d61da-6edd-47b0-8113-0831f35489d0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[3]",
+      "targets": [
+        ["css=.modal-footer > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "60cc05ca-1233-405b-979d-80a5ed742f95",
+    "name": "4. Delete a car",
+    "commands": [{
+      "id": "917ab763-8a49-461e-bcd4-a1a27b238da2",
+      "comment": "",
+      "command": "open",
+      "target": "https://qauto.forstudy.space/panel/garage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c68600c-d3b9-4a1a-b84c-4bd5c795ec99",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x822",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb77bcf7-0226-4381-9d15-1435ece8f876",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button/span",
+      "targets": [
+        ["css=.icon-edit", "css:finder"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f9b85fc-88a8-49ff-a91a-1d5e1775a80f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Remove car')]",
+      "targets": [
+        ["css=.btn-outline-danger", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Remove car')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7fa3616-3577-4f75-902d-97ca72e8d131",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Remove')]",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Remove')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "94384038-3d1b-4d37-964e-8bb7844f7f5e",
+    "name": "5. Log out",
+    "commands": [{
+      "id": "ccf01f7e-0e64-4bff-b347-f190440c458f",
+      "comment": "",
+      "command": "open",
+      "target": "https://qauto.forstudy.space/panel/garage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9dd8a68e-6378-4d50-bca0-c03ca97725fd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x822",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0296d5b6-7cfa-4dda-98f5-45635ce30620",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Log out')]",
+      "targets": [
+        ["linkText=Log out", "linkText"],
+        ["css=.text-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cd712883-f1da-44c1-a21c-998b100bb2af",
+    "name": "All tests",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cb05f579-5659-48b9-9685-dd3e70847023", "100648dd-28ee-429e-a9d1-76067061b03e", "d39b34d8-3367-4b1a-b1c9-f54b03f1e5be", "60cc05ca-1233-405b-979d-80a5ed742f95", "94384038-3d1b-4d37-964e-8bb7844f7f5e"]
+  }],
+  "urls": ["https://qauto.forstudy.space/", "https://qauto2.forstudy.space/panel/garage"],
+  "plugins": []
+}
